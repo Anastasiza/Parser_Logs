@@ -1,0 +1,21 @@
+mkdir logs
+touch logs/access.log
+
+'1.1.1.1 - - [23/Dec/2015:07:27:57 +0100] "GET /index.html HTTP/1.1" 200 1043 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 100' >> logs/access.log
+'2.2.2.2 - - [23/Dec/2015:07:28:01 +0100] "POST /submit HTTP/1.1" 200 562 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 150' >> logs/access.log
+'3.3.3.3 - - [23/Dec/2015:07:28:03 +0100] "GET /home HTTP/1.1" 404 210 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 120' >> logs/access.log
+'4.4.4.4 - - [23/Dec/2015:07:28:05 +0100] "PUT /api/data HTTP/1.1" 201 321 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 200' >> logs/access.log
+'1.1.1.1 - - [23/Dec/2015:07:28:07 +0100] "DELETE /api/data HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 50' >> logs/access.log
+'5.5.5.5 - - [23/Dec/2015:07:28:10 +0100] "OPTIONS /api/options HTTP/1.1" 200 123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 75' >> logs/access.log
+'6.6.6.6 - - [23/Dec/2015:07:28:12 +0100] "HEAD /api/head HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 90' >> logs/access.log
+'2.2.2.2 - - [23/Dec/2015:07:28:15 +0100] "GET /about HTTP/1.1" 200 895 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 110' >> logs/access.log
+'3.3.3.3 - - [23/Dec/2015:07:28:18 +0100] "POST /login HTTP/1.1" 401 234 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 140' >> logs/access.log
+'4.4.4.4 - - [23/Dec/2015:07:28:20 +0100] "GET /contact HTTP/1.1" 200 654 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 160' >> logs/access.log
+'5.5.5.5 - - [23/Dec/2015:07:28:23 +0100] "GET /services HTTP/1.1" 200 789 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 130' >> logs/access.log
+'6.6.6.6 - - [23/Dec/2015:07:28:26 +0100] "GET /portfolio HTTP/1.1" 200 978 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 100' >> logs/access.log
+'1.1.1.1 - - [23/Dec/2015:07:28:29 +0100] "GET /team HTTP/1.1" 200 1123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 170' >> logs/access.log
+'2.2.2.2 - - [23/Dec/2015:07:28:32 +0100] "GET /pricing HTTP/1.1" 200 456 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 120' >> logs/access.log
+'3.3.3.3 - - [23/Dec/2015:07:28:35 +0100] "GET /blog HTTP/1.1" 200 678 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 150' >> logs/access.log
+'4.4.4.4 - - [23/Dec/2015:07:28:38 +0100] "GET /faq HTTP/1.1" 200 234 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 90' >> logs/access.log
+'5.5.5.5 - - [23/Dec/2015:07:28:41 +0100] "GET /terms HTTP/1.1" 200 123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 100' >> logs/access.log
+'6.6.6.6 - - [23/Dec/2015:07:28:44 +0100] "GET /privacy HTTP/1.1" 200 321 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" 80' >> logs/access.log
